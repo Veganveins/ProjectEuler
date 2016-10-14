@@ -1,4 +1,4 @@
-
+#Find the sum of the digits in the number 100!
 def factorial(x):
     product = 1
     n = 2
