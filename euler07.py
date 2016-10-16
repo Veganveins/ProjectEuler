@@ -1,20 +1,28 @@
 #What is the 10,001st prime?
 #this currently runs in ~20 seconds, could be much faster...
 def is_prime(n):
-    if n%2 == 0:
-        return False
-    if n%3 == 0:
-        return False
-    if n%5 == 0:
-        return False
-    if n%6 == 0:
-        return False
-    if n%7 == 0:
-        return False
-    for i in range(2,n/2):
-        if n%i == 0:
+    if n > 7:
+        if n%2 == 0:
             return False
-    return True
+        if n%3 == 0:
+            return False
+        if n%5 == 0:
+            return False
+        if n%6 == 0:
+            return False
+        if n%7 == 0:
+            return False
+        for i in range(2,n/2):
+            if n%i == 0:
+                return False
+        return True
+    else:
+        if n == 1:
+            return False
+        for i in range(2,n/2):
+            if n%i == 0:
+                return False
+        return True
 
 
 def nth_prime(n):
@@ -29,3 +37,5 @@ def nth_prime(n):
     return primes[n-1]
 
 print nth_prime(10001)
+
+
