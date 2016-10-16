@@ -3,7 +3,9 @@
 #need to be able to determine the length of a colatz sequence
 #need to have an array with all of the potential checks and to be able to remove items from that array
 #need to be able to save the longest chain so far and compare it to the current check
-
+#this file definitely needs to go faster
+import time
+start_time = time.time()
 
 def how_long(n):
 
@@ -28,6 +30,7 @@ def tricky(n):
 		if trying_number > number:
 			number = trying_number
 			arr = [trying_number, i]
-	return "Of the numbers less than a million, the one giving the longest Collatz chain is %s, with a length of %s" % (arr[1], arr[0])
+	return 'Of the numbers less than a million, the one giving the longest Collatz chain is: ', arr[1], 'with a length of:', arr[0],  'found in: ', (time.time() - start_time), "seconds"
+
 
 print tricky(1000000) 
