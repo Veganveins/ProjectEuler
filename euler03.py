@@ -1,4 +1,7 @@
 #What is the largest prime factor of the number 600851475143
+#29.9 seconds
+import time
+start_time = time.time()
 
 def is_factor(n,m):
     if n%m == 0:
@@ -25,4 +28,4 @@ def largest_prime(n):
         
     return largest, i
 
-print largest_prime(600851475143)
+print largest_prime(600851475143), ' found in: ', time.time() - start_time, ' seconds'

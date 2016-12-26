@@ -1,5 +1,8 @@
 #What is the 10,001st prime?
-#this currently runs in ~20 seconds, could be much faster...
+#62.7 seconds
+import time
+start_time = time.time()
+
 def is_prime(n):
     if n > 7:
         if n%2 == 0:
@@ -36,6 +39,6 @@ def nth_prime(n):
         i += 1
     return primes[n-1]
 
-print nth_prime(10001)
+print nth_prime(10001), ' found in: ', time.time() - start_time, ' seconds'
 
 
