@@ -1,4 +1,7 @@
 #1000 digit fibonacci number
+import time
+start_time = time.time()
+
 def fib():
     fib0 = 1
     fib1 = 1
@@ -13,13 +16,10 @@ def fib():
         fib2 = fib1 + fib0
         digits[0] = fib2
         count += 1
-    
-    
-    
-    
+      
     return len(str(digits[0])), count
 
-print fib()
+print fib(), ' found in: ', time.time() - start_time, ' seconds'
     
 
     

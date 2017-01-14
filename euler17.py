@@ -22,15 +22,15 @@ def used_letters(n):
             else:
                 letter_sum += 10 #gets hundred and
                 letter_sum += len(ones[i/100]) #finds if it's one, two, three hudnred etc
-                remainder = i - (i/100)*100 
+                remainder = i - (i/100)*100 #finds the number without the hundreds place
 
             
             if remainder < 20:
-                letter_sum += len(ones[remainder])
+                letter_sum += len(ones[remainder])  #if remainder is 1-19, returns that number
             
             if remainder < 100 and remainder >= 20:
-                letter_sum += len(tens[(remainder/10)])
-                letter_sum += len(ones[remainder%10])
+                letter_sum += len(tens[(remainder/10)]) # returns the tens place
+                letter_sum += len(ones[remainder%10]) #returns zero if remainder is in 20, 30,...else returns ones place
 
 
         if i == 1000:

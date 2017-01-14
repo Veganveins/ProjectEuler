@@ -1,5 +1,7 @@
 #find the prime factorization
 #take each exponenet up by 1 and multiply the exponenets to get number of factors
+#takes like 5 seconds
+
 def is_Prime(n)
     i = 2
     for i in 2..Math.sqrt(n)

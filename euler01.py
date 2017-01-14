@@ -14,4 +14,5 @@ def find_sum(n):
             candidates.append(i)
     return sum(candidates)
 
-print find_sum(1000)
+if __name__ == '__main__':
+    print find_sum(1000)

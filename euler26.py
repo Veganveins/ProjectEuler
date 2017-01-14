@@ -12,7 +12,7 @@ def long_division(n, d):
     elif d < 100:
         divisors.append(0)
         multiplier = 100
-    elif d < 1000:
+    elif d <= 1500:
         divisors.append(0)
         divisors.append(0)
         multiplier = 1000
@@ -56,7 +56,7 @@ def long_division(n, d):
             else:
                 if divisor == 0 and remainder == 0:
                     return 0
-                return len(remainders)
+                return len(remainders), remainders
 
 def find_longest_cycle(n):
     longest_cycle = 0
@@ -68,7 +68,7 @@ def find_longest_cycle(n):
 
 
 if __name__ == '__main__':
-    print find_longest_cycle(999)
+    print long_division(1,6)
 
 
 

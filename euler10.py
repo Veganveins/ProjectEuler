@@ -1,4 +1,5 @@
 # #Find the sum of all the primes below 2 million
+#15.7 seconds
 import time
 start_time = time.time()
 
