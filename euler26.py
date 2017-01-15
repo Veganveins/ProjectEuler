@@ -64,11 +64,11 @@ def find_longest_cycle(n):
         if long_division(1, i) > longest_cycle:
             longest_cycle = long_division(1, i)
             saved_digit = i
-    return ["d= ", saved_digit, "cycle = ", longest_cycle]
+    return ["d= {}, cycle = {}".format(saved_digit, longest_cycle)]
 
 
 if __name__ == '__main__':
-    print long_division(1,6)
+    print find_longest_cycle(1000)
 
 
 
