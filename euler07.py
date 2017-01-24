@@ -1,5 +1,8 @@
-#What is the 10,001st prime?
-#62.7 seconds
+"""
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+
+What is the 10 001st prime number?
+"""
 import time
 start_time = time.time()
 
@@ -39,6 +42,7 @@ def nth_prime(n):
         i += 1
     return primes[n-1]
 
-print nth_prime(10001), ' found in: ', time.time() - start_time, ' seconds'
+if __name__ == '__main__': 
+    print nth_prime(10001), ' found in: ', time.time() - start_time, ' seconds'
 
 
