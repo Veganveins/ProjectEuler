@@ -25,5 +25,6 @@ def double_base(n):
     sums = sum(palindromes)
     return sums
 
-print double_base(1000000)
+if __name__ == '__main__':
+    print double_base(1000000)
 
