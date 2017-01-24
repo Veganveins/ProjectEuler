@@ -1,5 +1,8 @@
-#What is the largest prime factor of the number 600851475143
-#29.9 seconds
+"""
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+"""
 import time
 start_time = time.time()
 
@@ -28,4 +31,6 @@ def largest_prime(n):
         
     return largest, i
 
-print largest_prime(600851475143), ' found in: ', time.time() - start_time, ' seconds'
+
+if __name__ == '__main__':
+    print largest_prime(600851475143), ' found in: ', time.time() - start_time, ' seconds'
